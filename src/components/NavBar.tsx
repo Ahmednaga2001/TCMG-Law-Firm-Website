@@ -30,7 +30,7 @@ const NavBar = ({ }: IProps) => {
 
     return (
         <>
-            <nav className="bg-primary text-white p-2">
+            <nav className="bg-primary text-white p-2 font-JanatWT">
                 <div className="container mx-auto p-4">
                     <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 items-center">
                         <div className="flex justify-center">
@@ -64,11 +64,11 @@ const NavBar = ({ }: IProps) => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.nav
-                        className="bg-primary w-full p-2 min-h-screen md:min-h-[50vh]"
+                        className="bg-primary w-full p-2 min-h-screen md:min-h-[50vh] font-JanatLT"
                         initial={{ x: "100%" }}
                         animate={{ x: "0" }}
                         exit={{ x: "100%" }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: .5 }}
                     >
                         <div className="container mx-auto p-4 text-white">
                             <div className="flex flex-col space-y-4">
@@ -90,8 +90,8 @@ const NavBar = ({ }: IProps) => {
                                 </button>
                                 <AnimatePresence>
                                     {isOpenAbout && (
-                                        <motion.nav className="bg-primary  w-full p-2 fixed top-0 left-0 right-0 bottom-0 min-h-screen md:min-h-[50vh]" initial={{ y: "-100%" }} animate={{ y: "0" }} exit={{ y: "-100%" }}
-                                            transition={{ duration: .3 }}>
+                                        <motion.nav className="bg-primary font-JanatLT  w-full p-2 fixed  left-0 right-0 bottom-0 min-h-screen md:min-h-[50vh]" initial={{ y: "-100%" }} animate={{ y: "0" }} exit={{ y: "-100%" }}
+                                            transition={{ duration: .5 }}>
                                             <div className="container mx-auto p-4 text-white">
                                                 <div className="flex flex-col space-y-6">
                                                     <button className="flex gap-2 items-center justify-end text-2xl" onClick={handleOpenAbout}>

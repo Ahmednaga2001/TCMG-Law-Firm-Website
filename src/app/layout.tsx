@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local"; // Import the local font function
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Load custom fonts
+const JanatLT = localFont({ src: "../fonts/alfont_com_AAJannatLT-.ttf", display: "swap" });
+const JanatWT = localFont({ src: "../fonts/alfont_com_خط-جنات-عريض.ttf", display: "swap" });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

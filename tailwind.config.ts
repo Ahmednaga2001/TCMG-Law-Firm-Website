@@ -18,6 +18,10 @@ const config: Config = {
         "primary" : "#0D152C",
         "secondry" : "#845F38",
         "text" : "#ECF2FF"
+      },
+      fontFamily : {
+        JanatLT: 'JannaL',
+        JanatWT : 'JannaT'
       }
     },
   },
