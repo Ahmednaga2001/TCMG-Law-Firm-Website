@@ -61,7 +61,7 @@ const NavBar = ({ }: IProps) => {
                     </div>
                 </div>
             </nav>
-            {/* <AnimatePresence>
+            <AnimatePresence>
                 {isOpen && (
                     <motion.nav
                         className="bg-primary w-full p-2 min-h-screen md:min-h-[50vh] font-JanatLT"
@@ -112,7 +112,7 @@ const NavBar = ({ }: IProps) => {
                         </div>
                     </motion.nav>
                 )}
-            </AnimatePresence> */}
+            </AnimatePresence>
         </>
     );
 };
