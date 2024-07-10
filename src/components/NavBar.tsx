@@ -30,12 +30,12 @@ const NavBar = ({ }: IProps) => {
 
     return (
         <>
-            <nav className="bg-primary text-white p-2 font-JanatWT min-h-[120px] md:min-h-[100px]">
+            <nav className="bg-primary text-white p-2 font-JanatWT w-full  fixed top-0 left-0 z-20 ">
                 <div className="container mx-auto p-4">
                     <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 items-center">
                         <div className="flex justify-center">
                             <button onClick={handleOpen} className="hover:text-secondry">
-                                <Image src={isOpen ? HamburgerMenuHover : HamburgerMenu} width={20} height={20} alt="Menu" />
+                                <Image src={isOpen ? HamburgerMenuHover : HamburgerMenu} width={20} height={20} className="w-[20px] h-[20px]" alt="Menu" />
                             </button>
                         </div>
                         <div className="order-4 lg:order-none col-span-3 lg:col-auto flex justify-center">
@@ -56,12 +56,12 @@ const NavBar = ({ }: IProps) => {
                             </span>
                         </div>
                         <div className="flex justify-center">
-                            <Image src="/Logo.png" alt="logo" width={150} height={150} />
+                            <Image src="/Logo.png" alt="logo" width={150} height={150} className="h-[50px]" />
                         </div>
                     </div>
                 </div>
             </nav>
-            <AnimatePresence>
+            {/* <AnimatePresence>
                 {isOpen && (
                     <motion.nav
                         className="bg-primary w-full p-2 min-h-screen md:min-h-[50vh] font-JanatLT"
@@ -112,7 +112,7 @@ const NavBar = ({ }: IProps) => {
                         </div>
                     </motion.nav>
                 )}
-            </AnimatePresence>
+            </AnimatePresence> */}
         </>
     );
 };
