@@ -30,7 +30,7 @@ const NavBar = ({ }: IProps) => {
 
     return (
         <>
-            <nav className="bg-primary text-white p-2 font-JanatWT">
+            <nav className="bg-primary text-white p-2 font-JanatWT min-h-[120px] md:min-h-[100px]">
                 <div className="container mx-auto p-4">
                     <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 items-center">
                         <div className="flex justify-center">
