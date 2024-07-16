@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import HamburgerMenu from "@/images/HamburgerMenu.png";
-import HamburgerMenuHover from "@/images/State=Hover.png";
+import HamburgerMenu from "@/assets/HamburgerMenu.png";
+import HamburgerMenuHover from "@/assets/State=Hover.png";
 
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import Link from "next/link";
@@ -64,7 +64,7 @@ const NavBar = ({ }: IProps) => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.nav
-                        className="bg-primary w-full p-2 min-h-screen mt-[154px] lg:mt-[98px] md:min-h-[50vh] font-JanatLT"
+                        className="bg-primary w-full fixed z-20 p-2 min-h-screen  md:min-h-[50vh] font-JanatLT"
                         initial={{ x: "100%" }}
                         animate={{ x: "0" }}
                         exit={{ x: "100%" }}
