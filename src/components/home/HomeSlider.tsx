@@ -26,7 +26,7 @@ export default function HomeSlider() {
     ]);
 
     return (
-        <section className="bg-main-color py-20 bg-primary text-white min-h-screen font-JanatLT">
+        <section className="bg-main-color pt-20 bg-primary text-white min-h-screen font-JanatLT">
             <div className="container mx-auto p-4">
                 <Swiper
                     pagination={{
@@ -42,12 +42,12 @@ export default function HomeSlider() {
                     style={{ '--swiper-pagination-color': '#fff', '--swiper-pagination-bullet-size': '10px' }}
                 >
                     {slideInfo.map((item) => (
-                        <SwiperSlide key={item.id} className="swiper-slide">
+                        <SwiperSlide key={item.id}>
                             <div className="container mx-auto p-4">
-                                <h2 className="font-bold lg:text-[60px] lg:text-start text=center lg:w-[35vw] text-[40px] w-full">{item.title}</h2>
+                                <h2 className="font-bold lg:text-[50px] lg:text-start text=center lg:w-[35vw] text-[30px] w-full">{item.title}</h2>
                                 <div className="flex items-center justify-between">
                                     <div className="pt-10 lg:h-auto h-[380px]">
-                                        <p className="w-2/3 lg:text-[24px] lg:text-start text-center text-[20px]">{item.desc}</p>
+                                        <p className="w-2/3 lg:text-[20px] text-gray-300 lg:text-start text-center text-[18px]">{item.desc}</p>
                                     </div>
                                     <div className={item.shape}></div>
                                 </div>
@@ -57,8 +57,7 @@ export default function HomeSlider() {
                                     <FaArrowLeft className="" />
                                 </Link>
                                </div>
-                                {/* <div className="pt-5">
-                                </div> */}
+                           
                             </div>
                         </SwiperSlide>
                     ))}
