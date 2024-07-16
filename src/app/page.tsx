@@ -4,6 +4,7 @@ import HomeServiceOne from "@/components/home/HomeServiceOne";
 import HomeServiceTwo from "@/components/home/HomeServiceTwo";
 import HomeSlider from "@/components/home/HomeSlider";
 import NavBar from "@/components/NavBar";
+import HomeCompany from "@/components/home/HomeCompany";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
   <HomeAdvantages/>
   <HomeServiceOne/>
   <HomeServiceTwo/>
+  <HomeCompany/>
   
   </>
   );
