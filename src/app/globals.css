@@ -29,10 +29,16 @@ body{
     border-right: 25px solid #fff; 
   }
   .advantages .swiper-slide{
-    width: 100%;
-    height: 400px;
-    background-color: #21233A;
+    max-width: 450px !important;
   
+  }
+  @media (max-width : 767px) {
+    .advantages .swiper-slide{
+      width: 100% !important;
+    
+    }
+    
+    
   }
   .scrolling-container {
     overflow-y: scroll;
