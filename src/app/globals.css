@@ -33,8 +33,14 @@ body{
   --swiper-pagination-color: #fff;
   --swiper-pagination-bullet-size: 10px;
 }
+
+/* .advantages .mySwiper{
+  width: 72%;
+  display: flex;
+  justify-content: center;
+} */
   .advantages .swiper-slide{
-    width: 450px !important;
+    width: 350px !important;
   
   }
   @media (max-width : 767px) {

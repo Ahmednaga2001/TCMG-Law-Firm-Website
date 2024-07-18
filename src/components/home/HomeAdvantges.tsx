@@ -73,15 +73,15 @@ export default function HomeAdvantages() {
                         rotate: 0,
                         stretch: 0,
                         depth: 100,
-                        modifier: 3,
+                        modifier: 2,
                     }}
                     spaceBetween={50}
                     modules={[EffectCoverflow, Autoplay]} // Include Autoplay module here
-                    className="mySwiper h-96"
+                    className="mySwiper md:flex md:justify-center md:w-[70vw]"
                 >
                     {
                         images.map((el , index) => (
-                            <SwiperSlide className='  swiper-slide' key={index}>
+                            <SwiperSlide className='swiper-slide' key={index} >
                                 <div className='h-full w-full relative'>
                                     <Image src={el.img} alt='' className='img h-full w-full block' />
                                     <motion.p className='absolute w-full  bottom-0 bg-primary text-center py-4 text-[24px]'  transition={{delay:3}} initial={{ y: "40px", opacity: 0 }} animate={{ y: 0, opacity: 1 }}>{el.title}</motion.p>
