@@ -2,11 +2,12 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/effect-fade';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, EffectFade  } from 'swiper/modules';
 import Link from "next/link";
 
 export default function HomeSlider() {
@@ -34,15 +35,15 @@ export default function HomeSlider() {
                         clickable: true,
                         
                     }}
-                    modules={[Pagination, Autoplay]}
+                    effect={'fade'}
+                    modules={[Pagination, Autoplay, EffectFade]}
                     className="mySwiper"
                     autoplay={{ delay: 3000 }}
                     speed={800}
                     loop={true}
-                    style={{ '--swiper-pagination-color': '#fff', '--swiper-pagination-bullet-size': '10px' }}
-                >
+                               >
                     {slideInfo.map((item) => (
-                        <SwiperSlide key={item.id}>
+                        <SwiperSlide key={item.id} className="" >
                             <div className="container mx-auto p-4">
                                 <h2 className="font-bold lg:text-[50px] lg:text-start text=center lg:w-[35vw] text-[30px] w-full">{item.title}</h2>
                                 <div className="flex items-center justify-between">

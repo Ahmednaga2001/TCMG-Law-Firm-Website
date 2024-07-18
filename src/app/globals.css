@@ -28,8 +28,13 @@ body{
     border-bottom: 25px solid  #fff;
     border-right: 25px solid #fff; 
   }
+  /* styles.css */
+.mySwiper {
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-size: 10px;
+}
   .advantages .swiper-slide{
-    max-width: 450px !important;
+    width: 450px !important;
   
   }
   @media (max-width : 767px) {

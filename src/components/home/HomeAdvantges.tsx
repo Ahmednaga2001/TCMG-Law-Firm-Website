@@ -1,8 +1,11 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay } from "swiper/modules";
+import 'swiper/css/effect-fade';
+import { EffectCoverflow, Autoplay} from "swiper/modules";
 import { motion } from "framer-motion";
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-fade';
+
 
 import Img1 from "@/assets/one.png";
 import Img2 from "@/assets/two.png";
@@ -77,8 +80,8 @@ export default function HomeAdvantages() {
                     className="mySwiper h-96"
                 >
                     {
-                        images.map((el) => (
-                            <SwiperSlide className='  swiper-slide'>
+                        images.map((el , index) => (
+                            <SwiperSlide className='  swiper-slide' key={index}>
                                 <div className='h-full w-full relative'>
                                     <Image src={el.img} alt='' className='img h-full w-full block' />
                                     <motion.p className='absolute w-full  bottom-0 bg-primary text-center py-4 text-[24px]'  transition={{delay:3}} initial={{ y: "40px", opacity: 0 }} animate={{ y: 0, opacity: 1 }}>{el.title}</motion.p>
